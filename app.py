@@ -58,7 +58,7 @@ def generate_invoice():
                 doc.add_item(Item(item_name, item_name, unit, price))
 
         doc.set_item_tax_rate(request.form['tax_percentage'])
-        doc.set_bottom_tip("Thanks for shopping with us today! <br /> Please contact us at " + provider_email)
+        doc.set_bottom_tip("Thankyou for shopping with us today! <br /> Please contact us at " + provider_email)
         doc.finish()
 
         
